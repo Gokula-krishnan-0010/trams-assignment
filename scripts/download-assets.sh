@@ -1,0 +1,53 @@
+#!/bin/bash
+set -e
+DIR="$(dirname "$0")/../src/assets/images"
+mkdir -p "$DIR"
+cd "$DIR"
+
+declare -A ASSETS=(
+  ["ellipse-255.png"]="https://www.figma.com/api/mcp/asset/6b64b3cc-88b4-48af-a54f-f0c786c63cd2"
+  ["ellipse-256.png"]="https://www.figma.com/api/mcp/asset/b97d1ea0-9ad4-4940-b769-74f518c85919"
+  ["ellipse-262.png"]="https://www.figma.com/api/mcp/asset/d8deea1e-0e0a-466f-9e21-39336c9e57cd"
+  ["ellipse-257.png"]="https://www.figma.com/api/mcp/asset/0694cc99-fcca-4eac-ba9e-73b437558de7"
+  ["ellipse-258.png"]="https://www.figma.com/api/mcp/asset/878960d2-954b-49c1-b289-9bd0bf50acfc"
+  ["ellipse-259.png"]="https://www.figma.com/api/mcp/asset/bc8a90d5-8d13-4cce-8e99-d8a49eed39cf"
+  ["ellipse-260.png"]="https://www.figma.com/api/mcp/asset/b9a02a15-32fc-45b4-bab7-b2e8bc1819f2"
+  ["ellipse-261.png"]="https://www.figma.com/api/mcp/asset/24f08323-1e8a-470c-b2dc-171985626391"
+  ["rectangle-661.png"]="https://www.figma.com/api/mcp/asset/dd889585-ee83-4483-a515-189d7f2ce613"
+  ["inverted-comma-1.png"]="https://www.figma.com/api/mcp/asset/a7276619-884b-485c-b4f7-b7a660460092"
+  ["inverted-comma-3.png"]="https://www.figma.com/api/mcp/asset/e43e2a62-4520-4d5f-a227-225eec318edf"
+  ["ellipse-263.png"]="https://www.figma.com/api/mcp/asset/6c622fb2-4a66-4c47-b90b-fc710ffc976d"
+  ["ellipse-267.png"]="https://www.figma.com/api/mcp/asset/5ed20d2e-9876-4634-be5d-3282b87243a8"
+  ["ellipse-268.png"]="https://www.figma.com/api/mcp/asset/769a9f98-9a2c-4f0b-8839-2d6053b78ea8"
+  ["ellipse-266.png"]="https://www.figma.com/api/mcp/asset/6101e6c6-fd2c-4888-87fd-1ed816bcc781"
+  ["ellipse-270.png"]="https://www.figma.com/api/mcp/asset/1ba6fd43-f9ac-459c-bb7c-4af9aa683cb1"
+  ["ellipse-269.png"]="https://www.figma.com/api/mcp/asset/27376ae4-1032-4702-9d4a-edf39a790a3f"
+  ["ellipse-264.png"]="https://www.figma.com/api/mcp/asset/40a5db9d-f900-466f-b43a-e5244b0cc115"
+  ["ellipse-265.png"]="https://www.figma.com/api/mcp/asset/f9c88058-39b5-429d-932f-6aade3f539df"
+  ["image-348.png"]="https://www.figma.com/api/mcp/asset/abbea939-e89e-4110-8253-e3630383a8da"
+  ["image-349.png"]="https://www.figma.com/api/mcp/asset/ef2ba44c-7492-4406-b323-ba42b807b950"
+  ["polygon-2.svg"]="https://www.figma.com/api/mcp/asset/238ab0d5-9538-4494-8db6-f8b4f54c796f"
+  ["polygon-3.svg"]="https://www.figma.com/api/mcp/asset/4472c14c-ec78-4f0f-b099-0cdd9b5eff8b"
+  ["vector-2517.svg"]="https://www.figma.com/api/mcp/asset/30b55a53-ee76-4ce4-9012-813387cc0050"
+  ["line-21.svg"]="https://www.figma.com/api/mcp/asset/9b298f94-855c-4e6b-ab23-a57318b67d58"
+  ["line-22.svg"]="https://www.figma.com/api/mcp/asset/fa8ff0f8-d7db-4c78-a753-9af274837806"
+  ["vector-5.svg"]="https://www.figma.com/api/mcp/asset/4488b056-8b39-441f-ab7b-312c9c598318"
+  ["vector-6.svg"]="https://www.figma.com/api/mcp/asset/232ae01a-62f4-4e92-8257-3c51d7ef312d"
+  ["arrow-4.svg"]="https://www.figma.com/api/mcp/asset/7dd3da72-0f29-4d06-b7b4-c4d4d2f05885"
+  ["line-65.svg"]="https://www.figma.com/api/mcp/asset/c143df59-2979-4db0-b4cb-d34a46663a3f"
+  ["line-67.svg"]="https://www.figma.com/api/mcp/asset/b67548f8-3cb3-4888-9b4b-84b629f431aa"
+  ["arrow-5.svg"]="https://www.figma.com/api/mcp/asset/528f1a14-d91e-497d-b96a-e19e4ecd0579"
+  ["vector-2511.svg"]="https://www.figma.com/api/mcp/asset/134744f8-da32-4386-84ae-b76bff444a68"
+  ["vector-2510.svg"]="https://www.figma.com/api/mcp/asset/e9231f4c-0030-4f53-9828-76547466ab1d"
+  ["ellipse-739.svg"]="https://www.figma.com/api/mcp/asset/80bc2b25-5ca4-4d44-9cb4-8a05417382ec"
+  ["vector-2519.svg"]="https://www.figma.com/api/mcp/asset/f529f4b2-6142-4c22-bb54-f67f19268cf2"
+  ["ellipse-734.svg"]="https://www.figma.com/api/mcp/asset/b253101f-5fb5-4a04-a101-11f975f2d524"
+  ["ellipse-736.svg"]="https://www.figma.com/api/mcp/asset/af450a2f-a25a-40be-92ef-63c7425ea49f"
+)
+
+for file in "${!ASSETS[@]}"; do
+  echo "Downloading $file..."
+  curl -sL "${ASSETS[$file]}" -o "$file"
+done
+
+echo "Done. Downloaded ${#ASSETS[@]} assets."
