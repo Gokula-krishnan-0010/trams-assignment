@@ -18,7 +18,7 @@ export default function Features() {
             />
             <HighlightPill
               color="mint"
-              className="left-[380px] top-[81px] h-[75px] w-[180px]"
+              className="left-[353px] top-[83px] h-[75px] w-[180px]"
             />
             <h2 className="relative z-10 font-display text-[56px] leading-[76px] text-black">
               <span className="block">Tomorrow should</span>
@@ -51,14 +51,18 @@ export default function Features() {
           <div className="relative w-[706px] shrink-0">
             <UnderlineAccent
               src={vector6}
-              className="absolute left-[297px] top-[138px]"
+              className="absolute left-[220px] top-[148px]"
+              width={270}
             />
             <HighlightPill
               color="mint"
-              className="left-0 top-0 h-[80px] w-[172px]"
+              className="left-0 top-3 h-[70px] w-[115px]"
             />
             <h2 className="relative z-10 ml-[13px] mt-[7px] font-display text-[56px] leading-[76px] text-black">
-              See how we can help you progress
+              See how we can 
+            </h2>
+            <h2 className="relative z-10 ml-[13px] mt-[7px] font-display text-[56px] leading-[76px] text-black">
+              help you progress
             </h2>
             <p className="relative z-10 ml-[13px] mt-[34px] font-body text-[24px] leading-[36px] text-black">
               We add a layer of fearless insights and action that allows change

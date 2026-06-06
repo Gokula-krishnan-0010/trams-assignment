@@ -1,4 +1,4 @@
-import { arrow5 } from '../../assets/images'
+import { arrow4 } from '../../assets/images'
 
 export default function ReadMoreLink({ label = 'Read more' }) {
   return (
@@ -6,7 +6,7 @@ export default function ReadMoreLink({ label = 'Read more' }) {
       <span className="font-body text-[20px] font-medium leading-[24px] text-black">
         {label}
       </span>
-      <img src={arrow5} alt="" className="h-[15x] w-[144px]" aria-hidden="true" />
+      <img src={arrow4} alt="" className="h-[10px] w-[100px] mt-1.5" aria-hidden="true" />
     </div>
   )
 }

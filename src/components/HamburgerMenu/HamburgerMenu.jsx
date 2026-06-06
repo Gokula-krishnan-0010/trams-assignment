@@ -7,8 +7,8 @@ export default function HamburgerMenu() {
       className="relative h-[10.5px] w-[45px]"
       aria-label="Open menu"
     >
-      <img src={line21} alt="" className="absolute inset-x-0 top-0 h-[2px] w-full" />
-      <img src={line22} alt="" className="absolute inset-x-0 bottom-0 h-[2px] w-full" />
+      <img src={line22} alt="" className="absolute inset-x-0 top-0 h-[2px] w-full" />
+      <img src={line22} alt="" className="absolute inset-x-0 mt-2.5 top-0 h-[2px] w-full" />
     </button>
   )
 }

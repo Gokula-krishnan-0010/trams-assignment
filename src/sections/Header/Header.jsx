@@ -34,16 +34,16 @@ export default function Header() {
         <div className="relative w-full max-w-[1332px] text-center">
           <HighlightPill
             color="pink"
-            className="left-[76%] top-[144px] h-[127px] w-[355px] -translate-x-1/2"
+            className="left-[74%] top-[144px] h-[127px] w-[340px] -translate-x-1/2"
           />
           <HighlightPill
             color="mint"
-            className="left-[40%] top-[275px] h-[99px] w-[325px] -translate-x-1/2"
+            className="left-[40%] top-[280px] h-[99px] w-[300px] -translate-x-1/2"
           />
           <UnderlineAccent
             src={vector5}
-            className="absolute left-[31%] top-[100px]"
-            width={494}
+            className="absolute left-[33%] top-[100px]"
+            width={454}
             height={50}
           />
 

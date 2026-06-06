@@ -17,7 +17,7 @@ export default function CircularImage({
       <img
         src={src}
         alt={alt}
-        className={cn('absolute inset-0 size-full object-cover', imgClassName)}
+        className={cn('absolute inset-0 size-full object-cover z-100')}
         style={objectPosition ? { objectPosition } : undefined}
       />
     </div>

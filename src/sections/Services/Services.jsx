@@ -39,10 +39,12 @@ export default function Services() {
   return (
     <section id="services" className="relative w-full px-[160px] py-[120px]">
       <div className="relative mb-[82px]">
-        <UnderlineAccent src={vector6} className="absolute left-0 top-[204px]" />
+        <UnderlineAccent src={vector6} 
+          className="absolute left-[0] top-[214px]"
+          width={250} />
         <HighlightPill
           color="mint"
-          className="left-[607px] top-[12px] h-[92px] w-[262px]"
+          className="left-[395px] top-[25px] h-[92px] w-[200px]"
         />
         <h2 className="relative z-10 font-display text-[100px] leading-[116px] text-black">
           <span className="block">What we can</span>
@@ -58,15 +60,6 @@ export default function Services() {
             title={service.title}
             showDivider
           >
-            {service.overlay && (
-              <CircularImage
-                src={rectangle661}
-                alt=""
-                size={160}
-                className="absolute left-[1048px] top-1/2 -translate-y-1/2"
-                imgClassName="h-[123.75%] left-[-38.95%] w-[165%]"
-              />
-            )}
           </ServiceRow>
         ))}
       </div>

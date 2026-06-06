@@ -29,16 +29,17 @@ export default function Testimonials() {
   return (
     <section className="relative w-full px-[38px] py-[120px]">
       <div className="relative mx-auto max-w-[1844px]">
-        <div className="relative mb-[45px] text-center">
+        <div className="absolute ml-170 mb-[45px] text-center">
           <UnderlineAccent
             src={vector6}
-            className="absolute left-1/2 top-[119px] -translate-x-1/2"
+            className="absolute left-40 top-[125px] "
+            width={350}
           />
           <HighlightPill
             color="mint"
-            className="left-1/2 top-0 h-[70px] w-[207px] -translate-x-[152px]"
+            className="left-[-15px] top-0 h-[70px] w-[185px]"
           />
-          <h2 className="relative z-10 font-display text-[56px] leading-[66px] tracking-[-1.4px] text-black">
+          <h2 className="relative z-10 font-display text-[66px] leading-[66px] tracking-[-1.4px] text-black">
             <span className="block">What our customer</span>
             <span className="block">says About Us</span>
           </h2>

@@ -5,7 +5,7 @@ const navLinks = ['Home', 'Studio', 'Services', 'Contact', "FAQ's"]
 export default function Navbar() {
   return (
     <nav className="relative flex h-[100px] w-full items-center bg-white px-[160px]">
-      <p className="font-display text-[28px] leading-[46px] text-black">Elementum</p>
+      <p className="font-bold text-[28px] leading-[46px] text-black">Elementum</p>
 
       <ul className="absolute left-1/2 flex -translate-x-1/2 gap-[64px]">
         {navLinks.map((link) => (
