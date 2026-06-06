@@ -6,7 +6,7 @@ export default function ReadMoreLink({ label = 'Read more' }) {
       <span className="font-body text-[20px] font-medium leading-[24px] text-black">
         {label}
       </span>
-      <img src={arrow5} alt="" className="h-[2px] w-[144px]" aria-hidden="true" />
+      <img src={arrow5} alt="" className="h-[15x] w-[144px]" aria-hidden="true" />
     </div>
   )
 }

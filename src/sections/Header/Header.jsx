@@ -34,20 +34,20 @@ export default function Header() {
         <div className="relative w-full max-w-[1332px] text-center">
           <HighlightPill
             color="pink"
-            className="left-[62%] top-[124px] h-[137px] w-[405px] -translate-x-1/2"
+            className="left-[76%] top-[144px] h-[127px] w-[355px] -translate-x-1/2"
           />
           <HighlightPill
             color="mint"
-            className="left-[42%] top-[255px] h-[109px] w-[456px] -translate-x-1/2"
+            className="left-[40%] top-[275px] h-[99px] w-[325px] -translate-x-1/2"
           />
           <UnderlineAccent
             src={vector5}
-            className="absolute left-[27%] top-[90px]"
-            width={594}
+            className="absolute left-[31%] top-[100px]"
+            width={494}
             height={50}
           />
 
-          <h1 className="relative z-10 font-display text-[100px] leading-[126px] text-black">
+          <h1 className="relative z-10 font-display text-[100px] leading-[126px] text-black font-Gerbil">
             <span className="block">The thinkers and</span>
             <span className="block">doers were changing</span>
             <span className="block">the status Quo with</span>

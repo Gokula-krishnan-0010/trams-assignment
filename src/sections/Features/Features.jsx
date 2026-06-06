@@ -12,11 +12,13 @@ export default function Features() {
           <div className="relative w-[737px] shrink-0">
             <UnderlineAccent
               src={vector6}
-              className="absolute left-[4px] top-[55px]"
+              className="absolute left-[4px] top-[60px]"
+              width={285}
+              height={30}
             />
             <HighlightPill
               color="mint"
-              className="left-[520px] top-[71px] h-[81px] w-[217px]"
+              className="left-[380px] top-[81px] h-[75px] w-[180px]"
             />
             <h2 className="relative z-10 font-display text-[56px] leading-[76px] text-black">
               <span className="block">Tomorrow should</span>

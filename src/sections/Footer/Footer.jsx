@@ -15,15 +15,6 @@ const footerColumns = [
     heading: 'Follow Us',
     links: ['Instagram', 'LinkedIn', 'Youtube', 'Twitter'],
   },
-  {
-    heading: 'Terms & Policies',
-    links: [
-      '1498w Fluton ste, STE',
-      '2D Chicgo, IL 63867.',
-      '(123) 456789000',
-      'info@elementum.com',
-    ],
-  },
 ]
 
 export default function Footer() {
@@ -53,6 +44,47 @@ export default function Footer() {
         {footerColumns.map((col) => (
           <FooterColumn key={col.heading} heading={col.heading} links={col.links} />
         ))}
+        <div className="flex flex-col">
+          <p className="mb-[39px] font-display text-[22px] leading-[30px] text-black">
+            Terms & Policies
+          </p>
+          <ul className="flex flex-col gap-[3px]">
+              <li>
+                <a
+                  href="#"
+                  className="font-body text-[20px] leading-[30px] text-black"
+                >
+                  1498w Fluton ste, STE
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="font-body text-[20px] leading-[30px] text-black"
+                >
+                  2D Chicgo, IL 63867.
+                </a>
+              </li>
+          </ul>
+          <ul className="flex flex-col gap-[30px] mt-[30px]">
+          <li>
+            <a
+              href="#"
+              className="font-body text-[20px] leading-[30px] text-black"
+            >
+              (123) 456789000
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              className="font-body text-[20px] leading-[30px] text-black"
+            >
+              info@elementum.com
+            </a>
+          </li>
+      </ul>
+        </div>
       </div>
 
       <p className="pb-[60px] pt-[200px] text-center font-body text-[18px] leading-[30px] text-black">
