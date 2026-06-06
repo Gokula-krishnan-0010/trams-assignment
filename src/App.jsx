@@ -1,3 +1,4 @@
+import TopLayer from './sections/TopLayer/TopLayer'
 import DecorativeLayer from './sections/DecorativeLayer/DecorativeLayer'
 import Header from './sections/Header/Header'
 import Features from './sections/Features/Features'
@@ -8,6 +9,7 @@ import Footer from './sections/Footer/Footer'
 export default function App() {
   return (
     <div className="relative mx-auto w-full max-w-[1920px] overflow-hidden bg-white">
+      <TopLayer />
       <DecorativeLayer />
       <div className="relative z-10">
         <Header />

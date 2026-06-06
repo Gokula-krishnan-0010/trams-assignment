@@ -11,35 +11,35 @@ import {
   ellipse739,
 } from '../../assets/images'
 
-export default function DecorativeLayer() {
+export default function TopLayer() {
   return (
-    <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
-      <DecorativeSquiggle
+    <div className="pointer-events-none absolute inset-0 z-20 overflow-hidden">
+      <DecorativeSquiggle // keep
         src={ellipse736}
         className="left-360 top-120 z-0"
         width={150}
         height={80}
         rotation={-50}
       />
-      <DecorativeSquiggle
+      <DecorativeSquiggle // keep
         src={vector2511}
         className="left-10 top-[602px]"
         width={390}
         height={77}
         rotation={90}
       />
-      <DecorativeSquiggle 
+      <DecorativeSquiggle // keep
         src={vector2510}
         className="left-0 top-[600px]"
         width={358}
         height={77}
         rotation={90}
       />
-      <DecorativeSquiggle // pink highlight
+      <DecorativeSquiggle // keep
         src={ellipse734}
-        className="left-[400px] top-[1395px] caret-pink-900"
-        width={700}
-        height={700}
+        className="left-[500px] top-[1395px] caret-pink-900"
+        width={500}
+        height={500}
       />
       <DecorativeSquiggle
         src={polygon2}
@@ -47,46 +47,19 @@ export default function DecorativeLayer() {
         width={200}
         height={180}
       />
-      <DecorativeSquiggle // top
-        src={vector2517}
-        className="left-[430px] top-[2030px]"
-        width={1484}
-        height={793}
-        rotation={10}
-      />
-      <DecorativeSquiggle // bottom
-        src={vector2517}
-        className="left-[969px] top-[2760px]"
-        width={1584}
-        height={793}
-        rotation={5}
-      />
-      <DecorativeSquiggle
-        src={polygon2}
-        className="left-[101px] top-[2339px]"
-        width={274}
-        height={267}
-      />
-      <DecorativeSquiggle
-        src={polygon3}
-        className="left-[1546px] top-[1541px]"
-        width={374}
-        height={372}
-        rotation={-32}
-      />
-      <DecorativeSquiggle
+      <DecorativeSquiggle // keep
         src={vector2519}
         className="left-[750px] top-[4985px]"
         width={164}
         height={150}
       />
-      <DecorativeSquiggle
+      <DecorativeSquiggle // keep
         src={vector2519}
         className="left-[850px] top-[4985px]"
         width={164}
         height={150}
       />
-      <DecorativeSquiggle
+      <DecorativeSquiggle // keep
         src={ellipse739}
         className="left-[1500px] top-[5258px]"
         width={250}
